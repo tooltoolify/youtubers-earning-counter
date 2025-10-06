@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTuber Earning Counter | Professional Analytics Tool</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google AdSense Code -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+     crossorigin="anonymous"></script>
     <style>
         :root {
             --primary: #ff0000;
@@ -441,6 +444,43 @@
             font-size: 0.9rem;
         }
         
+        /* Ad Units Styling */
+        .ad-container {
+            margin: 30px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 90px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .ad-label {
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--gray);
+            margin-bottom: 5px;
+        }
+        
+        .ad-banner {
+            width: 100%;
+            max-width: 728px;
+            margin: 0 auto;
+        }
+        
+        .ad-sidebar {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        
+        .ad-in-content {
+            width: 100%;
+            max-width: 728px;
+            margin: 20px auto;
+        }
+        
         /* Responsive Design */
         @media (max-width: 992px) {
             .calculator-grid {
@@ -482,6 +522,10 @@
             .footer-content {
                 grid-template-columns: 1fr;
             }
+            
+            .ad-banner, .ad-in-content {
+                max-width: 320px;
+            }
         }
     </style>
 </head>
@@ -513,6 +557,23 @@
             <p>Our advanced tool helps YouTubers estimate their potential earnings based on views, engagement, and other key metrics.</p>
         </div>
     </section>
+
+    <!-- Top Banner Ad -->
+    <div class="container">
+        <div class="ad-label">Advertisement</div>
+        <div class="ad-container">
+            <!-- Google AdSense Banner Ad -->
+            <ins class="adsbygoogle ad-banner"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="1234567890"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
 
     <!-- Calculator Section -->
     <section class="calculator" id="calculator">
@@ -576,6 +637,23 @@
         </div>
     </section>
 
+    <!-- In-content Ad -->
+    <div class="container">
+        <div class="ad-label">Advertisement</div>
+        <div class="ad-container">
+            <!-- Google AdSense In-content Ad -->
+            <ins class="adsbygoogle ad-in-content"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="0987654321"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
     <!-- Features Section -->
     <section class="features" id="features">
         <div class="container">
@@ -598,6 +676,21 @@
                     <h3>Audience Insights</h3>
                     <p>Understand your audience demographics and how they impact your earning potential.</p>
                 </div>
+                
+                <!-- Sidebar Ad within Features Grid -->
+                <div class="feature-card ad-container">
+                    <!-- Google AdSense Square Ad -->
+                    <ins class="adsbygoogle ad-sidebar"
+                         style="display:block"
+                         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                         data-ad-slot="1122334455"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-bullseye"></i>
@@ -649,6 +742,23 @@
             </div>
         </div>
     </section>
+
+    <!-- Bottom Banner Ad -->
+    <div class="container">
+        <div class="ad-label">Advertisement</div>
+        <div class="ad-container">
+            <!-- Google AdSense Bottom Banner Ad -->
+            <ins class="adsbygoogle ad-banner"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="5566778899"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
@@ -784,5 +894,7 @@
             document.getElementById('sponsor-earnings').textContent = '$' + sponsorEarnings.toFixed(2);
         });
     </script>
+</body>
+</html>
 </body>
 </html>
